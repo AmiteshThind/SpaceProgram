@@ -1,7 +1,7 @@
 <template>
-
-    <div class="row scrolling justify-content-center">
-        <app-news-card  v-for="(newsData,index) in newsArray" :key='index' :newsData="newsData"></app-news-card>
+ 
+    <div class="row scroll justify-content-center">
+        <app-news-card v-for="(newsData,index) in newsArray" :key='index' :newsData="newsData"></app-news-card>
     </div>
 
 </template>
@@ -40,17 +40,18 @@ export default {
 body{
     overflow-y: auto;
 }
-.scrolling{
+.scroll{
     float:left;
 overflow-y: auto;
-height: 850px;
+height: 768px;
 
 }
 html {
-  overflow: scroll;
+  overflow:   scroll;
 }
 ::-webkit-scrollbar {
-    display: none;
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
 }
 
 </style>

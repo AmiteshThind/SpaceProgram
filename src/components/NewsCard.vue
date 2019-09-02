@@ -1,8 +1,8 @@
 <template>
 
-   <div class="card" style="width:15rem" >
+   <div class="card" style="width:20rem" >
      <a :href="newsData.url" class="ho">
-      <img class="card-img-top" :src="newsData.urlToImage" alt="Card image cap" style="height:10rem;padding:2px">     
+      <img class="card-img-top" :src="newsData.urlToImage" alt="Card image cap" style="height:10rem;">     
       <div class="card-body">
       <h5 class="card-title" >{{newsData.title}}</h5>
    </div>
@@ -29,15 +29,12 @@ export default {
 </script>
 <style scoped>
 .card{
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 15px;
-  margin-bottom: 10px;
+  margin: 15px;
   transition: transform .2s;
 }
 a{
     text-decoration: none;
-  color: #494D52
+  color: black
 }
 .card-title{
   font-size: 15px;
