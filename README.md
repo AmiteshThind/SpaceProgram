@@ -1,4 +1,4 @@
-# how_is_space
+# Space Program
 
 ## Project setup
 ```
